@@ -6,5 +6,8 @@ cache: cache.cpp
 run: cache
 	gunzip -c art.trace.gz | ./cache -t 32 -a 8 -l 64
 
+run2: cache
+	gunzip -c mcf.trace.gz | ./cache -t 32 -a 8 -l 64
+
 clean:
 	rm -f cache
